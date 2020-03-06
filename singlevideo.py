@@ -2,6 +2,7 @@ from pytube import YouTube
 
 # yt = YouTube('https://www.youtube.com/watch?v=2ALEMLZKnfA')
 link = open('video_ids.txt', 'r')
+# link.close()
 
 for i in link:
     print(i)
@@ -16,10 +17,14 @@ for i in link:
         stream = yt.streams.first()
 
         print(stream)
-
-        stream.download()
+        print("Downloading "+yt.title)
+        stream.download(filename=yt.title+"_"+i)
+        print("Downloaded "+yt.title)
     except:
         print("Connection Error")
+        failed_link = open("failed_downloads.txt","a")
+        failed_link.write(i)
+        failed_link.close()
 
 
 
