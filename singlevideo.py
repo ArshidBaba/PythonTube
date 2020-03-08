@@ -1,8 +1,6 @@
-from pytube import YouTube
+from pytube import YouTube, Stream
 
-# yt = YouTube('https://www.youtube.com/watch?v=2ALEMLZKnfA')
 link = open('video_ids.txt', 'r')
-# link.close()
 
 for i in link:
     print(i)
@@ -11,12 +9,14 @@ for i in link:
         print(yt.title)
 
         print(yt.thumbnail_url)
-
+        # do = yt.streams.all()
+        # print(type(do))
         print(yt.streams.all())
 
-        stream = yt.streams.first()
+        stream = yt.streams.filter(progressive=True, res="720p").first()
 
         print(stream)
+        print(type(stream))
         print("Downloading "+yt.title)
         stream.download(filename=yt.title+"_"+i)
         print("Downloaded "+yt.title)
