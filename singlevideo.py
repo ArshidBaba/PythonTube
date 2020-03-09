@@ -19,9 +19,9 @@ for i in link:
         print(type(stream))
         print("Downloading "+yt.title)
         stream.download(filename=yt.title+"_"+i)
-        print("Downloaded "+yt.title)
-    except:
-        print("Connection Error")
+        print("Downloaded "+yt.title+" successfully")
+    except Exception as e:
+        print("An Exception Occured: " + str(e))
         failed_link = open("failed_downloads.txt","a")
         failed_link.write(i)
         failed_link.close()
