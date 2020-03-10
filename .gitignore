@@ -1,2 +1,4 @@
 *.mp4
 *time.py
+*hl-public-ssh-keypair.pem
+*ubuntu@ec2-52-91-223-104.compute-1.amazonaws.com

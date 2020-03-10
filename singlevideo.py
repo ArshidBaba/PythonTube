@@ -18,7 +18,8 @@ for i in link:
         print(stream)
         print(type(stream))
         print("Downloading "+yt.title)
-        stream.download(filename=yt.title+"_"+i)
+        stream.download(output_path='/home/arshid/Hash/youtube/lectures', filename=yt.title+"_"+i)
+        # stream.download(output_path='/home/ubuntu/hashlearn/lectures', filename=yt.title+"_"+i)
         print("Downloaded "+yt.title+" successfully")
     except Exception as e:
         print("An Exception Occured: " + str(e))
