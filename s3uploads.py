@@ -7,7 +7,7 @@ from os.path import isfile, join
 #when script runs on my local machine
 mypath = '/home/arshid/Hash/youtube/lectures'
 
-#when script runs on ec2
+#when script runs on an ec2 instance
 # mypath = '/home/ubuntu/hashlearn/lectures'    
 
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
