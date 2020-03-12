@@ -1,4 +1,5 @@
 from pytube import YouTube, Stream
+from time import sleep
 
 link = open('video_ids.txt', 'r')
 
@@ -26,6 +27,7 @@ for i in link:
         link2 = open('successful_video_ids.txt', "a")
         link2.write(i)
         link2.close()
+        sleep(10)
     except Exception as e:
         print("An Exception Occured: " + str(e))
         failed_link = open("failed_downloads.txt","a")
