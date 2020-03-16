@@ -6,6 +6,8 @@ This set of Python scripts downloads videos from from and uploads them to an AWS
 * s3uploads.py
 * video_ids.txt
 * successful_video_ids.txt
-- failed_downloads.txt
+* failed_downloads.txt
 
++ Testing
++ Nothing
 
