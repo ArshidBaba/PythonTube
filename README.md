@@ -1,10 +1,10 @@
 # PythonTube
 
-This Python script demonstrates how to use pytube library to download youtube videos
+This set of Python scripts downloads videos from from and uploads them to an AWS s3 bucket
 
-    * singlevideo.py
-    * s3uploads.py
-    * video_ids.txt
-    * successful_video_ids.txt
-    * failed_downloads.txt
+* singlevideo.py
+* s3uploads.py
+* video_ids.txt
+* successful_video_ids.txt
+* failed_downloads.txt
 
