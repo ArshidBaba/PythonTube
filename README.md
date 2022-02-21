@@ -1,7 +1,6 @@
 # PythonTube
 
-## These Python scripts download videos from Youtube and uploads 
-## them to an AWS s3 bucket
+## These Python scripts download videos from Youtube and uploads them to an AWS s3 bucket
 
 ### singlevideo.py
 ### s3uploads.py
